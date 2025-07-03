@@ -28,9 +28,7 @@
     $table_data = "";
     while($data = mysqli_fetch_assoc($res))
     {   
-      echo "<pre>";
-  var_dump($data['booking_status']);
-  echo "</pre>";
+     
       $date = date("d-m-Y",strtotime($data['datentime']));
       $checkin = date("d-m-Y",strtotime($data['check_in']));
       $checkout = date("d-m-Y",strtotime($data['check_out']));
